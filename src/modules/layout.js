@@ -1,6 +1,4 @@
 import homePage from "./homepage.js";
-// import contactPage from "./contact.js";
-// import menuPage from "./menu.js";
 
 function layout() {
     let container = document.querySelector("#content");

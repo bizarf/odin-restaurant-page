@@ -5,41 +5,23 @@ import menuPage from "./modules/menu.js";
 
 loader();
 
-const navigationBtns = (() => {
-
+// navigation buttons that load other pages via their modules
+function navBtns() {
     let mainContent = document.querySelector(".main-content");
 
-    function homeBtn() {
-        let home = document.querySelector("#home-button")
-        home.addEventListener("click", () => {
+    let nav = document.querySelectorAll(".nav-buttons");
+    nav.forEach(button => {
+        button.addEventListener("click", (e) => {
             while (mainContent.firstChild) mainContent.removeChild(mainContent.firstChild);
-            homePage()
+            if (e.target.id === "home-button") {
+                homePage();
+            } else if (e.target.id === "menu-button") {
+                menuPage();
+            } else if (e.target.id === "contact-button") {
+                contactPage();
+            }
         })
-    }
+    })
+}
 
-    function menuBtn() {
-        let menu = document.querySelector("#menu-button")
-        menu.addEventListener("click", () => {
-            while (mainContent.firstChild) mainContent.removeChild(mainContent.firstChild);
-            menuPage()
-        })
-    }
-
-    function contactBtn() {
-        let contact = document.querySelector("#contact-button")
-        contact.addEventListener("click", () => {
-            while (mainContent.firstChild) mainContent.removeChild(mainContent.firstChild);
-            contactPage()
-        })
-    }
-
-    return {
-        homeBtn,
-        menuBtn,
-        contactBtn
-    }
-})()
-
-navigationBtns.homeBtn();
-navigationBtns.menuBtn();
-navigationBtns.contactBtn();
+navBtns()

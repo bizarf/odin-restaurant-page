@@ -15,5 +15,6 @@ export default function homePage() {
 
     let homePageMessage = document.createElement("div");
     homePageMessage.textContent = "Pizza Mania has been serving up delicious pizza since 1980."
+    homePageMessage.style.textAlign = "center";
     mainContent.appendChild(homePageMessage);
 }
