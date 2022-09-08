@@ -1,0 +1,7 @@
+@import url(./modern-normalize.css);
+
+#content {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(/dist/images/kelvin-t-AcA8moIiD3g-unsplash.jpg) no-repeat;
+    background-size: 100%;
+}
