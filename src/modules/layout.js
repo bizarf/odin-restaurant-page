@@ -10,7 +10,8 @@ function layout() {
 
     // header divs
     let logo = document.createElement("div");
-    logo.textContent = "Logo goes here"
+    logo.textContent = "Pizza Mania";
+    logo.classList = "logo";
     header.appendChild(logo)
     let navigationBar = document.createElement("div");
     header.appendChild(navigationBar)
