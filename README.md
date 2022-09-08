@@ -4,3 +4,4 @@ A simple restaurant page created in Javascript using DOM elements for The Odin P
 
 Credits:
 Kelvin T - (kelvin-t-AcA8moIiD3g-unsplash.jpg) https://unsplash.com/photos/AcA8moIiD3g
+Nadya Spetnitskaya - (nadya-spetnitskaya-tOYiQxF9-Ys-unsplash.jpg) https://unsplash.com/photos/tOYiQxF9-Ys
