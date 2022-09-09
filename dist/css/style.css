@@ -1,12 +1,17 @@
 @import url(./modern-normalize.css);
 
+@font-face {
+    font-family: Smooch;
+    src: url(../fonts/Smooch-Regular.ttf);
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(/dist/images/kelvin-t-AcA8moIiD3g-unsplash.jpg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/kelvin-t-AcA8moIiD3g-unsplash.jpg) no-repeat;
     background-size: 100%;
 
 }
@@ -28,10 +33,14 @@ body {
 
 .logo {
     font-size: 50px;
+    font-family: Smooch;
 }
 
 .nav-buttons {
     margin-left: 5px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
 }
 
 .main-content {
@@ -41,9 +50,9 @@ body {
     margin-right: 20%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding-left: 10%;
     padding-right: 10%;
+    white-space: pre-line;
 }
 
 footer {
@@ -70,7 +79,12 @@ footer {
 }
 
 h2,
-h3,
-h4 {
+h3 {
     text-align: center;
+}
+
+p {
+    border: solid;
+    padding: 10px;
+    border-radius: 10px;
 }
