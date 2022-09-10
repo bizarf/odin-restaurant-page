@@ -11,9 +11,8 @@ html {
 
 body {
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/kelvin-t-AcA8moIiD3g-unsplash.jpg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../images/kelvin-t-AcA8moIiD3g-unsplash.jpg);
     background-size: 100%;
-
 }
 
 #content {
@@ -87,4 +86,17 @@ p {
     border: solid;
     padding: 10px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: rgba(255, 255, 255, .6);
+    }
+
+    body {
+        background-size: 100vh;
+    }
 }
